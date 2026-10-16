@@ -1574,7 +1574,7 @@ main > .section.surface + .cta-banner { margin-top: 0; }
 .ba-col .ba-tag { display: inline-block; padding: 4px 14px; border-radius: 999px; background: var(--gray-50); }
 .ba-col.is-after .ba-tag { background: var(--brand); color: #fff; }
 .ba-flow { display: flex; flex-direction: column; align-items: center; }
-.ba-flow p:not(.ba-arrow) { width: 100%; max-width: 280px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; box-sizing: border-box; }
+.ba-flow p:not(.ba-arrow) { width: 100%; max-width: 360px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; box-sizing: border-box; }
 .ba-flow p.ba-last { background: var(--text); border-color: var(--text); color: #fff; }
 .is-after .ba-flow p:not(.ba-arrow) { border-color: var(--brand); }
 .is-after .ba-flow p.ba-last { background: var(--brand); border-color: var(--brand); color: #fff; }
@@ -1599,7 +1599,7 @@ main > .section.surface + .cta-banner { margin-top: 0; }
 @media (max-width: 767px) { .principles { grid-template-columns: 1fr; } }
 
 /* 税別の注記・プライバシーポリシー本文 */
-.price-note { margin-top: 12px; font-size: 14px; color: var(--muted); }
+.price-note { max-width: none; margin: 12px 0 0; font-size: 14px; color: var(--muted); }
 .policy-doc { display: grid; gap: 14px; max-width: 760px; }
 .policy-doc h2 { margin-top: 26px; font-size: 20px; font-weight: 700; }
 .policy-doc p { font-size: 15px; line-height: 1.9; color: var(--text-2); word-break: auto-phrase; }
@@ -1610,3 +1610,6 @@ main > .section.surface + .cta-banner { margin-top: 0; }
   #problem > .task-cards { scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x proximity; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
   #problem > .task-cards::-webkit-scrollbar { display: none; }
 }
+
+/* Feature の式: 改行したとき「＋」が行頭に来るよう、各項目の前に＋を置く */
+.formula span > i:first-child { margin-left: 0; }
