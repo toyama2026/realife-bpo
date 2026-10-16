@@ -1604,3 +1604,9 @@ main > .section.surface + .cta-banner { margin-top: 0; }
 .policy-doc h2 { margin-top: 26px; font-size: 20px; font-weight: 700; }
 .policy-doc p { font-size: 15px; line-height: 1.9; color: var(--text-2); word-break: auto-phrase; }
 .policy-doc .policy-date { margin-top: 24px; color: var(--muted); font-size: 14px; }
+
+/* スマホの「時間を取られている業務」カード: 標準のスクロールバー（矢印つき）を隠し、スナップをゆるくする */
+@media (max-width: 767px) {
+  #problem > .task-cards { scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x proximity; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+  #problem > .task-cards::-webkit-scrollbar { display: none; }
+}
