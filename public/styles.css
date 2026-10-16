@@ -814,7 +814,7 @@ h1, h2, h3, .fv-catch, .telband-lead, .p-t, .issue-close, .diff-close, .aix-clos
 /* スマホの画面下に固定する CTA（PC では出さない） */
 .sp-cta { display: none; }
 
-@media (max-width: 1320px) {
+@media (max-width: 1199px) {
   .hd-tel { display: none; }
 }
 @media (max-width: 1180px) {
@@ -969,8 +969,7 @@ h1, h2, h3, .fv-catch, .telband-lead, .p-t, .issue-close, .diff-close, .aix-clos
 .hd-tel { font-size: 19px; margin-right: 6px; }
 .hd-actions .btn-line { padding: 0 18px; }
 .btn-pill-header { padding-left: 20px; gap: 12px; }
-@media (max-width: 1400px) { .hd-tel { display: none; } }
-@media (max-width: 1240px) and (min-width: 1061px) { .hd-actions .btn-line { display: none; } }
+@media (max-width: 1240px) { .hd-actions .btn-line { display: none; } }
 @media print { .sp-cta { display: none; } }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1068,8 +1067,6 @@ p, li, dd, dt, td, th, summary, .blog-title, .case-title { text-wrap: pretty; }
 /* R6: カードの説明文も文節で折り返す */
 .svc-card p, .ind-card p, .hear li > p, .steps p, .aix-d, .aix-cycle p, .flow-row dd, .price-list li, .cta-tel-line { word-break: auto-phrase; }
 .diff-table td, .info-table dd { word-break: auto-phrase; }
-/* 資料請求の線ボタンを外して空いたぶん、ヘッダーの電話番号は 1200px 以上で出す */
-@media (min-width: 1200px) { .hd-tel { display: inline-flex; } }
 
 /* ============================================================================
    改修案 2026-10-06（RENOVATION-PLAN.md）の部品。

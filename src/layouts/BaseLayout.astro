@@ -58,32 +58,9 @@ const canonical = siteUrl + canonicalPath;
 
   <slot />
 
-<footer class="site-footer">
-    <a class="footer-logo" href="/" aria-label="REALIFE BPO トップへ"><img src="/img/logo-realife-bpo.svg" alt="REALIFE BPO SERVICE" width="1151" height="244" loading="lazy" /></a>
-    <p class="footer-company">合同会社REALIFE<br class="sp-only" /><span class="pc-only">　</span>〒812-0011 福岡県福岡市博多区博多駅前2-4-2 H¹O博多駅前707号室</p>
-    <p class="footer-tel"><a href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel"/></svg>092-600-7592</a></p>
-    <nav class="footer-nav" aria-label="フッターナビゲーション">
-      <a href="/about/">REALIFEとは</a>
-      <a href="/service/">サービス</a>
-      <a href="/price/">料金</a>
-      <a href="/flow/">導入の流れ</a>
-      <a href="/faq/">よくある質問</a>
-      <a href="/news/">お知らせ</a>
-      <a href="/column/">コラム</a>
-      <a href="/blog/">ブログ</a>
-      <a href="/about/#company">会社概要</a>
-      <a href="/?purpose=hearing#contact">30分無料相談</a>
-      <!-- 資料請求: flags.SHOW_DOC -->
-      <a href="/#contact">お問い合わせ</a>
-      <a href="/privacy-policy/">プライバシーポリシー</a>
-    </nav>
-    <p class="copyright" lang="en">&copy; REALIFE. All Rights Reserved.</p>
-  </footer>
+  <SiteFooter />
 
-<nav class="sp-cta" aria-label="お問い合わせの方法">
-    <a class="is-sub" href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel"/></svg><span>電話</span></a>
-    <a class="is-main" href="/?purpose=hearing#contact"><svg aria-hidden="true"><use href="#i-send"/></svg><span>30分無料相談</span></a>
-  </nav>
+  <SpCta />
 
   <script src="/main.js" is:inline></script>
 </body>
