@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CtaBanner from "../../components/CtaBanner.astro";
+import BlogCard from "../../components/BlogCard.astro";
+import PostBody from "../../content/posts/what-is-bpo.astro";
+import { POSTS } from "../../data/posts";
+const post = POSTS.find((x) => x.slug === "what-is-bpo")!;
+---
+<BaseLayout
+  title={post.title}
+  description={post.desc}
+  canonicalPath={`/blog/${post.slug}/`}
+  ogImage={post.image}
+  ogType="article"
+  currentPage="blog"
+>
+  <main id="main">
+    <article class="article">
+      <nav class="crumbs" aria-label="パンくずリスト"><a href="/">ホーム</a><span aria-hidden="true">/</span><a href="/blog/">ブログ</a><span aria-hidden="true">/</span><span>BPOとは？ 派遣・外注との違いと「攻めのBPO」という考え方</span></nav>
+      <header class="article-head">
+        <p class="blog-meta"><span class="blog-cat">{post.cat}</span><time datetime={post.date}>{post.dateLabel}</time></p>
+        <h1 set:html={post.h1} />
+      </header>
+      <div class="article-visual"><img src={post.image} alt="" width="1344" height="756" /></div>
+      <div class="article-body">
+        <p class="article-lead">{post.lead}</p>
+        <nav class="toc" aria-label="この記事の目次"><p class="toc-t">目次</p><ul><li><a href="#s1">BPOとは</a></li><li><a href="#s2">派遣・スポットの外注との違い</a></li><li><a href="#s3">これまでのBPOは「守り」の手段だった</a></li><li><a href="#s4">「攻めのBPO」とは</a></li><li><a href="#s5">まとめ</a></li></ul></nav>
+        <PostBody />
+        <p class="article-by">この記事は、合同会社REALIFE（福岡）が<span class="nw">作成しています。</span></p>
+      </div>
+    </article>
+
+    <CtaBanner />
+
+    <section class="related" aria-label="関連記事">
+      <div class="head">
+        <p class="label" lang="en">Related</p>
+        <h2>関連記事</h2>
+      </div>
+      <ul class="blog-grid">
+        <BlogCard post={POSTS.find((x) => x.slug === "lost-inquiries")!} heading="h3" />
+        <BlogCard post={POSTS.find((x) => x.slug === "how-to-start")!} heading="h3" />
+        <BlogCard post={POSTS.find((x) => x.slug === "ai-and-people")!} heading="h3" />
+      </ul>
+      <p class="more more-center"><a class="more-link" href="/blog/">記事一覧へ<span class="round-icon" aria-hidden="true"><svg><use href="#i-right" /></svg></span></a></p>
+    </section>
+  </main>
+</BaseLayout>

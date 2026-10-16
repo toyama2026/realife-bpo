@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
+---
+<BaseLayout
+  title="料金｜REALIFE BPO"
+  description="必要なところから、月5万円〜。START 5万円〜／GROW 10万円〜／FULL 20万円〜＋成果報酬。BPOをコストではなく、利益を生む投資に。"
+  canonicalPath="/price/"
+  ogImage="/img/page-price.jpg"
+  currentPage="price"
+>
+  <main id="main">
+<section class="page-head">
+      <p class="label" lang="en">Price</p>
+      <h1>料金</h1>
+    </section>
+    <div class="page-visual page-visual-3">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/img/page-price-sp.jpg" width="1000" height="750" />
+        <img src="/img/page-price.jpg" alt="書類と画面の数字を見比べながら、事務の作業を進めるスタッフ" width="1344" height="448" fetchpriority="high" />
+      </picture>
+    </div>
+
+    <section class="section section-tight" id="price">
+      <div class="head">
+        <h2>必要なところから、<wbr />月5万円〜。</h2>
+      </div>
+      <ul class="plans">
+        <li><h3 class="plan-en" lang="en">START</h3><p class="plan-price"><strong>5</strong>万円〜</p><p class="plan-d">問い合わせ・見積・追客など</p></li>
+        <li><h3 class="plan-en" lang="en">GROW</h3><p class="plan-price"><strong>10</strong>万円〜</p><p class="plan-d">営業事務・顧客対応</p></li>
+        <li><h3 class="plan-en" lang="en">FULL</h3><p class="plan-price"><strong>20</strong>万円〜</p><p class="plan-d">営業支援・<span class="nw">バックオフィス・改善</span></p></li>
+      </ul>
+      <p class="plan-plus"><span>＋</span>成果報酬</p>
+    </section>
+
+    <section class="section surface surface-gray" id="policy">
+      <div class="head">
+        <p class="label" lang="en">Policy</p>
+        <h2>料金の考え方</h2>
+      </div>
+      <blockquote class="big-quote big-quote-plain">
+        <p>安いBPOを提供するのではありません。</p>
+        <p>AI・自動化・人の役割を最適化し、<br />成果に対して合理的なコストになるよう設計します。</p>
+      </blockquote>
+    </section>
+
+    <section class="section" id="roi">
+      <div class="head">
+        <p class="label" lang="en">ROI</p>
+        <h2>BPOをコストではなく、<wbr />利益を生む投資に。</h2>
+      </div>
+      <div class="roi">
+        <p>例えば、<br />月10万円のBPO費用。</p>
+        <p>その結果、</p>
+        <ul class="task-tags roi-list"><li>問い合わせ対応率UP</li><li>追客数UP</li><li>営業時間UP</li><li>受注＋1件</li></ul>
+        <p>となれば、<br />BPO費用以上の利益を<wbr />生み出せる<span class="nw">可能性があります。</span></p>
+        <p>だから見るのは、</p>
+      </div>
+      <blockquote class="big-quote big-quote-plain"><p>「いくら払うか」ではなく、<br />「いくら利益が増えるか」。</p></blockquote>
+    </section>
+
+    <!-- @ctaband -->
+    <section class="cta-banner" aria-labelledby="cta-banner-h">
+      <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
+      <div class="cta-banner-body">
+        <p class="label" lang="en">Contact</p>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
+        <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
+        <p class="cta-banner-lead">REALIFEが、</p>
+        <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>
+        <p class="cta-banner-lead">を整理します。<br />そして、<wbr />売上・コスト・利益の<wbr />改善ポイントを一緒に考えます。</p>
+        <a class="btn-pill btn-lg" href="/?purpose=hearing#contact"><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send"/></svg></span></a>
+        <p class="cta-banner-tel"><a href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel"/></svg>092-600-7592</a></p>
+      </div>
+    </section>
+    <!-- /@ctaband -->
+  </main>
+</BaseLayout>

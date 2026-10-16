@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
+---
+<BaseLayout
+  title="REALIFEとは｜REALIFE BPO"
+  description="ただの業務代行ではない。売上を伸ばし、利益を最大化する。業務を引き受けることは、あくまで手段。成果を出すことが、REALIFE BPOの仕事です。合同会社REALIFE（福岡市博多区）の会社概要。"
+  canonicalPath="/about/"
+  currentPage="about"
+>
+  <main id="main">
+<section class="page-head">
+      <p class="label" lang="en">About</p>
+      <h1>REALIFEとは</h1>
+    </section>
+
+    <section class="section section-tight" id="about">
+      <div class="head">
+        <h2>ただの業務代行ではない。</h2>
+        <p class="core-sub">売上を伸ばし、<wbr />利益を最大化する。</p>
+      </div>
+      <p class="head-lead">業務を引き受けることは、<wbr />あくまで手段。<br />成果を出すことが、<wbr />REALIFE BPOの仕事です。</p>
+
+      <div class="strip" aria-hidden="true"><div class="strip-track"><img src="/img/strip-1.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-other.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-2.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/strip-3.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-professional.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-5.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/strip-1.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-other.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-2.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/strip-3.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-professional.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-5.jpg" alt="" width="800" height="600" loading="lazy" /></div></div>
+    </section>
+
+    <section class="section section-tight surface surface-gray" id="behind">
+      <p class="lead-line">そして裏側では、</p>
+      <blockquote class="big-quote big-quote-plain"><p>REALIFEがAIエージェント・自動化・システム・人を組み合わせ、<br class="pc-only" />最も効率的な方法で業務を運用する。</p></blockquote>
+    </section>
+
+    <section class="section" id="company">
+      <div class="head">
+        <p class="label" lang="en">Company</p>
+        <h2>会社概要</h2>
+      </div>
+      <dl class="info-table">
+        <div><dt>会社名</dt><dd>合同会社REALIFE</dd></div>
+        <div><dt>設立</dt><dd>2024年1月</dd></div>
+        <div><dt>所在地</dt><dd>〒812-0011 <span class="nw">福岡県福岡市博多区</span><span class="nw">博多駅前2-4-2</span> <span class="nw">H¹O博多駅前707号室</span></dd></div>
+        <div><dt>事業内容</dt><dd>BPO / AIX / HOUSING</dd></div>
+        <div><dt>TEL</dt><dd><a href="tel:0926007592">092-600-7592</a></dd></div>
+        <div><dt>FAX</dt><dd>092-600-7594</dd></div>
+      </dl>
+    </section>
+
+    <!-- @ctaband -->
+    <section class="cta-banner" aria-labelledby="cta-banner-h">
+      <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
+      <div class="cta-banner-body">
+        <p class="label" lang="en">Contact</p>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
+        <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
+        <p class="cta-banner-lead">REALIFEが、</p>
+        <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>
+        <p class="cta-banner-lead">を整理します。<br />そして、<wbr />売上・コスト・利益の<wbr />改善ポイントを一緒に考えます。</p>
+        <a class="btn-pill btn-lg" href="/?purpose=hearing#contact"><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send"/></svg></span></a>
+        <p class="cta-banner-tel"><a href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel"/></svg>092-600-7592</a></p>
+      </div>
+    </section>
+    <!-- /@ctaband -->
+  </main>
+</BaseLayout>

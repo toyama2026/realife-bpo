@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
+---
+<BaseLayout
+  title="サービス｜REALIFE BPO"
+  description="SALES 売上をつくる／CUSTOMER 顧客を逃さない／BACK OFFICE 会社を止めない／IMPROVEMENT 業務を改善する。人だけでやらない。REALIFEが、最適な方法で業務を動かします。"
+  canonicalPath="/service/"
+  ogImage="/img/service-main.jpg"
+  currentPage="service"
+>
+  <main id="main">
+<section class="page-head">
+      <p class="label" lang="en">Service</p>
+      <h1>サービス</h1>
+    </section>
+
+    <div class="page-visual">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/img/service-main-sp.jpg" width="1200" height="900" />
+        <img src="/img/service-main.jpg" alt="数字のダッシュボードを画面共有しながら、オンラインでお客様と打ち合わせをするスタッフ" width="2200" height="512" fetchpriority="high" />
+      </picture>
+    </div>
+
+    <section class="section section-tight" id="areas">
+      <div class="areas areas-grid">
+        <article class="area" id="sales">
+          <img src="/img/service-sales.jpg" alt="" width="1280" height="720" loading="lazy" />
+          <div class="area-body">
+            <h2 class="svc4-en" lang="en">SALES</h2>
+            <p class="area-h">売上をつくる</p>
+            <p class="svc4-items"><span class="si">問い合わせ</span><span class="sl">&nbsp;/ </span><span class="si">見積</span><span class="sl">&nbsp;/ </span><span class="si">追客</span><span class="sl">&nbsp;/ </span><span class="si">アポ</span><span class="sl">&nbsp;/ </span><span class="si">休眠顧客</span></p>
+          </div>
+        </article>
+        <article class="area" id="customer">
+          <img src="/img/ind-medical.jpg" alt="" width="960" height="540" loading="lazy" />
+          <div class="area-body">
+            <h2 class="svc4-en" lang="en">CUSTOMER</h2>
+            <p class="area-h">顧客を逃さない</p>
+            <p class="svc4-items"><span class="si">電話</span><span class="sl">&nbsp;/ </span><span class="si">メール</span><span class="sl">&nbsp;/ </span><span class="si">LINE</span><span class="sl">&nbsp;/ </span><span class="si">日程調整</span><span class="sl">&nbsp;/ </span><span class="si">顧客管理</span></p>
+          </div>
+        </article>
+        <article class="area" id="backoffice">
+          <img src="/img/service-cost.jpg" alt="" width="1280" height="720" loading="lazy" />
+          <div class="area-body">
+            <h2 class="svc4-en" lang="en">BACK OFFICE</h2>
+            <p class="area-h">会社を止めない</p>
+            <p class="svc4-items"><span class="si">請求</span><span class="sl">&nbsp;/ </span><span class="si">入金確認</span><span class="sl">&nbsp;/ </span><span class="si">書類</span><span class="sl">&nbsp;/ </span><span class="si">データ入力</span></p>
+          </div>
+        </article>
+        <article class="area" id="improvement">
+          <img src="/img/service-profit.jpg" alt="" width="1280" height="720" loading="lazy" />
+          <div class="area-body">
+            <h2 class="svc4-en" lang="en">IMPROVEMENT</h2>
+            <p class="area-h">業務を改善する</p>
+            <p class="svc4-items"><span class="si">業務整理</span><span class="sl">&nbsp;/ </span><span class="si">数値管理</span><span class="sl">&nbsp;/ </span><span class="si">自動化</span><span class="sl">&nbsp;/ </span><span class="si">AI活用</span><span class="sl">&nbsp;/ </span><span class="si">DX</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section surface surface-gray" id="method">
+      <div class="head">
+        <p class="label" lang="en">Feature</p>
+        <h2>人だけでやらない。</h2>
+      </div>
+      <p class="lead-line">REALIFEは業務に応じて、</p>
+      <p class="formula"><span>人<i aria-hidden="true">＋</i>AIエージェント</span><i aria-hidden="true">＋</i><span>自動化<i aria-hidden="true">＋</i>既存システム</span></p>
+      <p class="lead-line">を組み合わせます。</p>
+      <blockquote class="big-quote"><p>REALIFEが、<wbr />最適な方法で業務を動かします。</p></blockquote>
+
+    </section>
+
+    <section class="section" id="why">
+      <div class="head">
+        <p class="label" lang="en">Technology</p>
+        <h2>なぜ効率的に<wbr />運用できるのか？</h2>
+      </div>
+      <div class="why">
+        <img src="/img/aix.jpg" alt="" width="1280" height="720" loading="lazy" />
+        <blockquote class="why-body">
+          <p>REALIFEでは、AIエージェントや自動化などのテクノロジーを積極的に活用しています。</p>
+          <p>定型業務や大量処理はテクノロジーで効率化し、人は判断・顧客対応・改善など、人にしかできない仕事に集中。</p>
+          <p>だから、必要以上に人員を増やさず、より多くの業務を動かせます。</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section surface surface-gray" id="results">
+      <div class="head">
+        <p class="label" lang="en">Results</p>
+        <h2>作業量ではなく、<wbr />成果を見る。</h2>
+      </div>
+      <p class="metrics"><span class="si">売上</span><span class="sl">&nbsp;/ </span><span class="si">商談数</span><span class="sl">&nbsp;/ </span><span class="si">成約数</span><span class="sl">&nbsp;/ </span><span class="si">対応率</span><span class="sl">&nbsp;/ </span><span class="si">削減工数</span><span class="sl">&nbsp;/ </span><span class="si">コスト</span><span class="sl">&nbsp;/ </span><span class="si">粗利</span><span class="sl">&nbsp;/ </span><span class="si">利益</span></p>
+      <blockquote class="big-quote"><p>「何をやったか」ではなく、<br />「何が変わったか」。</p></blockquote>
+
+    </section>
+
+    <section class="section" id="before-after">
+      <div class="head">
+        <p class="label" lang="en">Before / After</p>
+        <h2>Before → After</h2>
+      </div>
+      <div class="ba">
+        <div class="ba-pair">
+          <div class="ba-col"><h3 class="ba-tag" lang="en">Before</h3><div class="ba-flow"><p>問い合わせ</p><p class="ba-arrow" aria-hidden="true">↓</p><p>担当者が対応</p><p class="ba-arrow" aria-hidden="true">↓</p><p>忙しくて追客できない</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">失注</p></div></div>
+          <div class="ba-col is-after"><h3 class="ba-tag" lang="en">After</h3><div class="ba-flow"><p>問い合わせ</p><p class="ba-arrow" aria-hidden="true">↓</p><p>REALIFEが対応</p><p class="ba-arrow" aria-hidden="true">↓</p><p>追客</p><p class="ba-arrow" aria-hidden="true">↓</p><p>商談</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">受注</p></div></div>
+        </div>
+        <div class="ba-pair">
+          <div class="ba-col"><h3 class="ba-tag" lang="en">Before</h3><div class="ba-flow"><p>社員が請求・事務</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">営業できない</p></div></div>
+          <div class="ba-col is-after"><h3 class="ba-tag" lang="en">After</h3><div class="ba-flow"><p>REALIFEが事務</p><p class="ba-arrow" aria-hidden="true">↓</p><p>社員が営業</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">売上UP</p></div></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- @ctaband -->
+    <section class="cta-banner" aria-labelledby="cta-banner-h">
+      <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
+      <div class="cta-banner-body">
+        <p class="label" lang="en">Contact</p>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
+        <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
+        <p class="cta-banner-lead">REALIFEが、</p>
+        <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>
+        <p class="cta-banner-lead">を整理します。<br />そして、<wbr />売上・コスト・利益の<wbr />改善ポイントを一緒に考えます。</p>
+        <a class="btn-pill btn-lg" href="/?purpose=hearing#contact"><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send"/></svg></span></a>
+        <p class="cta-banner-tel"><a href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel"/></svg>092-600-7592</a></p>
+      </div>
+    </section>
+    <!-- /@ctaband -->
+  </main>
+</BaseLayout>

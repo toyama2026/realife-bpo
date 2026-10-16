@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
+---
+<BaseLayout
+  title="ページが見つかりません｜REALIFE BPO"
+  description="お探しのページは見つかりませんでした。"
+  canonicalPath="/"
+  currentPage="other"
+>
+  <main id="main">
+<section class="page-head">
+      <p class="label" lang="en">404</p>
+      <h1>ページが見つかりません</h1>
+      <p class="page-lead">お探しのページは移動または削除された可能性があります。</p>
+      <ul class="nf-links">
+        <li><a href="/">トップ</a></li>
+        <li><a href="/service/">サービス</a></li>
+        <li><a href="/blog/">ブログ</a></li>
+        <li><a href="/#contact">お問い合わせ</a></li>
+      </ul>
+    </section>
+  </main>
+</BaseLayout>

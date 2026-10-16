@@ -1,0 +1,322 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { POSTS, LATEST_SLUGS } from "../data/posts";
+---
+<BaseLayout
+  title="REALIFE BPO｜業務を任せる。売上を伸ばす。利益を残す。"
+  description="営業・顧客対応・事務・バックオフィスまで、REALIFEが必要な業務を引き受けます。AI・自動化・各種ツールも活用し、より効率的に、より大きな成果につなげます。"
+  canonicalPath="/"
+  ogImage="/img/fv-people.jpg"
+  currentPage="top"
+>
+  <main id="main">
+<!-- 文言は Koki 原文（RENOVATION-PLAN-ORIGINAL.md）のまま。@top の中は _tools/content.py が生成（手で直さない）。並びは原文「ページ全体（順番）」 -->
+    <!-- @top -->
+    <!-- §3 FV（写真の上はキャッチだけ。リードとボタンは写真の下の白地） -->
+    <section class="fv" aria-label="ファーストビュー">
+      <div class="fv-frame">
+        <picture>
+          <source media="(max-width: 767px)" srcset="/img/fv-people-sp.jpg" width="900" height="1125" />
+          <img class="fv-img" src="/img/fv-people.jpg" alt="" width="2400" height="1200" fetchpriority="high" decoding="async" />
+        </picture>
+        <div class="fv-shade" aria-hidden="true"></div>
+        <div class="fv-text">
+          <h1 class="fv-catch">業務を任せる。<br />売上を伸ばす。<br />利益を残す。</h1>
+        </div>
+      </div>
+      <div class="fv-value">
+        <div class="fv-value-copy">
+          <p class="fv-lead">営業・顧客対応・事務・バックオフィスまで、<br />REALIFEが必要な業務を引き受けます。<br />AI・自動化・各種ツールも活用し、<br />より効率的に、より大きな成果につなげます。</p>
+        </div>
+        <div class="fv-value-cta">
+          <!-- @fvdoc -->
+          <!-- 資料請求の線ボタン: flags.SHOW_DOC -->
+          <!-- /@fvdoc -->
+          <a class="btn-pill btn-lg" href="/?purpose=hearing#contact" data-fv-cta><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- §4 Problem -->
+    <section class="section surface surface-gray" id="problem">
+      <div class="head">
+        <p class="label" lang="en">Problem</p>
+        <h2>忙しいのに、<wbr />利益が増えない。</h2>
+      </div>
+      <p class="lead-line">経営者・社員が、</p>
+      <ul class="task-tags task-cards" aria-label="時間を取られている業務">
+        <li><img src="/img/ind-realestate.jpg" alt="" width="960" height="540" loading="lazy" /><span>問い合わせ対応</span></li>
+        <li><img src="/img/blog/how-to-start.jpg" alt="" width="1344" height="756" loading="lazy" /><span>見積</span></li>
+        <li><img src="/img/blog/lost-inquiries.jpg" alt="" width="1344" height="756" loading="lazy" /><span>追客</span></li>
+        <li><img src="/img/ind-construction.jpg" alt="" width="960" height="540" loading="lazy" /><span>日程調整</span></li>
+        <li><img src="/img/blog/what-is-bpo.jpg" alt="" width="1344" height="756" loading="lazy" /><span>請求</span></li>
+        <li><img src="/img/blog/beyond-buzzwords.jpg" alt="" width="1344" height="756" loading="lazy" /><span>入金確認</span></li>
+        <li><img src="/img/blog/industry-teams.jpg" alt="" width="1344" height="756" loading="lazy" /><span>データ入力</span></li>
+      </ul>
+      <p class="lead-line">などに時間を取られている。</p>
+      <p class="problem-line">その結果、<br />本来やるべき営業・経営・顧客対応に<wbr />時間を使えない。</p>
+      <blockquote class="big-quote"><p>人手不足だけが問題ではありません。<br />人が「やらなくてもいい仕事」に<wbr />時間を使っていることが問題です。</p></blockquote>
+    </section>
+
+    <!-- §2 REALIFEとは（ブランドの核） -->
+    <section class="section surface surface-dark" id="about">
+      <div class="head">
+        <p class="label" lang="en">About</p>
+        <h2>ただの業務代行ではない。</h2>
+        <p class="core-sub">売上を伸ばし、<wbr />利益を最大化する。</p>
+      </div>
+      <p class="head-lead">業務を引き受けることは、<wbr />あくまで手段。<br />成果を出すことが、<wbr />REALIFE BPOの仕事です。</p>
+      <p class="more more-center"><a class="more-link" href="/about/" aria-label="REALIFEとはを詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
+      <div class="strip" aria-hidden="true"><div class="strip-track"><img src="/img/strip-1.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-other.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-2.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/strip-3.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-professional.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-5.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/strip-1.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-other.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-2.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/strip-3.jpg" alt="" width="800" height="600" loading="lazy" /><img src="/img/ind-professional.jpg" alt="" width="960" height="540" loading="lazy" /><img src="/img/strip-5.jpg" alt="" width="800" height="600" loading="lazy" /></div></div>
+    </section>
+
+    <!-- §5 Solution -->
+    <section class="section" id="solution">
+      <div class="head">
+        <p class="label" lang="en">Solution</p>
+        <h2>REALIFEが、<wbr />業務を引き受けます。</h2>
+      </div>
+      <p class="head-lead">単純な作業代行ではなく、</p>
+      <ol class="num-steps num-steps-5">
+        <li><span class="num" lang="en">01</span><h3>整理</h3><p>今の業務を整理</p></li>
+        <li><span class="num" lang="en">02</span><h3>設計</h3><p>社内とREALIFEの役割を決定</p></li>
+        <li><span class="num" lang="en">03</span><h3>実行</h3><p>REALIFEが実務を担当</p></li>
+        <li><span class="num" lang="en">04</span><h3>改善</h3><p>数字を見ながら改善</p></li>
+        <li><span class="num" lang="en">05</span><h3>拡張</h3><p>成果が出れば対応範囲を拡大</p></li>
+      </ol>
+    </section>
+
+    <!-- §8 サービス -->
+    <section class="section surface surface-gray" id="service">
+      <div class="head">
+        <p class="label" lang="en">Service</p>
+        <h2>サービス</h2>
+      </div>
+      <ul class="svc4">
+        <li><img src="/img/service-sales.jpg" alt="" width="1280" height="720" loading="lazy" /><h3 class="svc4-en" lang="en">SALES</h3><p class="svc4-h">売上をつくる</p><p class="svc4-items"><span class="si">問い合わせ</span><span class="sl">&nbsp;/ </span><span class="si">見積</span><span class="sl">&nbsp;/ </span><span class="si">追客</span><span class="sl">&nbsp;/ </span><span class="si">アポ</span><span class="sl">&nbsp;/ </span><span class="si">休眠顧客</span></p></li>
+        <li><img src="/img/ind-medical.jpg" alt="" width="960" height="540" loading="lazy" /><h3 class="svc4-en" lang="en">CUSTOMER</h3><p class="svc4-h">顧客を逃さない</p><p class="svc4-items"><span class="si">電話</span><span class="sl">&nbsp;/ </span><span class="si">メール</span><span class="sl">&nbsp;/ </span><span class="si">LINE</span><span class="sl">&nbsp;/ </span><span class="si">日程調整</span><span class="sl">&nbsp;/ </span><span class="si">顧客管理</span></p></li>
+        <li><img src="/img/service-cost.jpg" alt="" width="1280" height="720" loading="lazy" /><h3 class="svc4-en" lang="en">BACK OFFICE</h3><p class="svc4-h">会社を止めない</p><p class="svc4-items"><span class="si">請求</span><span class="sl">&nbsp;/ </span><span class="si">入金確認</span><span class="sl">&nbsp;/ </span><span class="si">書類</span><span class="sl">&nbsp;/ </span><span class="si">データ入力</span></p></li>
+        <li><img src="/img/service-profit.jpg" alt="" width="1280" height="720" loading="lazy" /><h3 class="svc4-en" lang="en">IMPROVEMENT</h3><p class="svc4-h">業務を改善する</p><p class="svc4-items"><span class="si">業務整理</span><span class="sl">&nbsp;/ </span><span class="si">数値管理</span><span class="sl">&nbsp;/ </span><span class="si">自動化</span><span class="sl">&nbsp;/ </span><span class="si">AI活用</span><span class="sl">&nbsp;/ </span><span class="si">DX</span></p></li>
+      </ul>
+
+    </section>
+
+    <!-- @slot:doc -->
+    <!-- flags.SHOW_DOC=False のため非表示（_tools/partials/top-doc.html） -->
+    <!-- /@slot:doc -->
+
+    <!-- §6 REALIFEの特徴（§7 は /service/#why） -->
+    <section class="section" id="method">
+      <div class="head">
+        <p class="label" lang="en">Feature</p>
+        <h2>人だけでやらない。</h2>
+      </div>
+      <div class="feature-duo">
+        <img src="/img/aix.jpg" alt="" width="1280" height="720" loading="lazy" />
+        <div class="feature-body">
+      <p class="lead-line">REALIFEは業務に応じて、</p>
+      <p class="formula"><span>人<i aria-hidden="true">＋</i>AIエージェント</span><i aria-hidden="true">＋</i><span>自動化<i aria-hidden="true">＋</i>既存システム</span></p>
+      <p class="lead-line">を組み合わせます。</p>
+      <blockquote class="big-quote"><p>REALIFEが、<wbr />最適な方法で業務を動かします。</p></blockquote>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- §9 成果 -->
+    <section class="section surface surface-gray" id="results">
+      <div class="head">
+        <p class="label" lang="en">Results</p>
+        <h2>作業量ではなく、<wbr />成果を見る。</h2>
+      </div>
+      <div class="wide-photo results-photo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="/img/service-main-sp.jpg" width="1200" height="900" />
+          <img src="/img/service-main.jpg" alt="" width="2200" height="512" loading="lazy" />
+        </picture>
+      </div>
+      <p class="metrics"><span class="si">売上</span><span class="sl">&nbsp;/ </span><span class="si">商談数</span><span class="sl">&nbsp;/ </span><span class="si">成約数</span><span class="sl">&nbsp;/ </span><span class="si">対応率</span><span class="sl">&nbsp;/ </span><span class="si">削減工数</span><span class="sl">&nbsp;/ </span><span class="si">コスト</span><span class="sl">&nbsp;/ </span><span class="si">粗利</span><span class="sl">&nbsp;/ </span><span class="si">利益</span></p>
+      <blockquote class="big-quote"><p>「何をやったか」ではなく、<br />「何が変わったか」。</p></blockquote>
+
+    </section>
+
+    <!-- @slot:case -->
+    <!-- flags.SHOW_CASE=False のため非表示（_tools/partials/top-case.html） -->
+    <!-- /@slot:case -->
+
+    <!-- §10 Before → After（トップは 1 例目だけ。2 例目は /service/） -->
+    <section class="section" id="before-after">
+      <div class="head">
+        <p class="label" lang="en">Before / After</p>
+        <h2>Before → After</h2>
+      </div>
+      <div class="ba">
+        <div class="ba-pair">
+          <div class="ba-col"><h3 class="ba-tag" lang="en">Before</h3><div class="ba-flow"><p>問い合わせ</p><p class="ba-arrow" aria-hidden="true">↓</p><p>担当者が対応</p><p class="ba-arrow" aria-hidden="true">↓</p><p>忙しくて追客できない</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">失注</p></div></div>
+          <div class="ba-col is-after"><h3 class="ba-tag" lang="en">After</h3><div class="ba-flow"><p>問い合わせ</p><p class="ba-arrow" aria-hidden="true">↓</p><p>REALIFEが対応</p><p class="ba-arrow" aria-hidden="true">↓</p><p>追客</p><p class="ba-arrow" aria-hidden="true">↓</p><p>商談</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">受注</p></div></div>
+        </div>
+      </div>
+      <p class="more more-center"><a class="more-link" href="/service/" aria-label="サービスを詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
+    </section>
+
+    <!-- §11 料金（料金の考え方は /price/） -->
+    <section class="section surface surface-gray" id="price">
+      <div class="price-panel">
+      <div class="head">
+        <p class="label" lang="en">Price</p>
+        <h2>必要なところから、<wbr />月5万円〜。</h2>
+      </div>
+      <ul class="plans">
+        <li><h3 class="plan-en" lang="en">START</h3><p class="plan-price"><strong>5</strong>万円〜</p><p class="plan-d">問い合わせ・見積・追客など</p></li>
+        <li><h3 class="plan-en" lang="en">GROW</h3><p class="plan-price"><strong>10</strong>万円〜</p><p class="plan-d">営業事務・顧客対応</p></li>
+        <li><h3 class="plan-en" lang="en">FULL</h3><p class="plan-price"><strong>20</strong>万円〜</p><p class="plan-d">営業支援・<span class="nw">バックオフィス・改善</span></p></li>
+      </ul>
+      <p class="plan-plus"><span>＋</span>成果報酬</p>
+      </div>
+    </section>
+
+    <!-- §12 ROI（トップは見出しと結びだけ。全文は /price/#roi） -->
+    <section class="section" id="roi">
+      <div class="head">
+        <p class="label" lang="en">ROI</p>
+        <h2>BPOをコストではなく、<wbr />利益を生む投資に。</h2>
+      </div>
+      <blockquote class="big-quote big-quote-plain"><p>「いくら払うか」ではなく、<br />「いくら利益が増えるか」。</p></blockquote>
+      <p class="more more-center"><a class="more-link" href="/price/" aria-label="料金を詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
+    </section>
+
+    <!-- §13 導入フロー -->
+    <section class="section surface surface-gray" id="flow">
+      <div class="head">
+        <p class="label" lang="en">Flow</p>
+        <h2>導入フロー</h2>
+      </div>
+      <ol class="num-steps num-steps-6">
+        <li><span class="num" lang="en">01</span><h3>30分ヒアリング</h3></li>
+        <li><span class="num" lang="en">02</span><h3>業務・数字を確認</h3></li>
+        <li><span class="num" lang="en">03</span><h3>REALIFEの<wbr />担当範囲を設計</h3></li>
+        <li><span class="num" lang="en">04</span><h3>運用開始</h3></li>
+        <li><span class="num" lang="en">05</span><h3>KPI確認</h3></li>
+        <li><span class="num" lang="en">06</span><h3>改善</h3></li>
+      </ol>
+      <p class="more more-center"><a class="more-link" href="/flow/" aria-label="導入フローを詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
+    </section>
+
+    <!-- §14 FAQ（3 問。10 問は /faq/） -->
+    <section class="section" id="faq">
+      <div class="head">
+        <p class="label" lang="en">FAQ</p>
+        <h2>よくある質問</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>どんな業務を任せられますか？</summary>
+          <p>営業・顧客対応・事務・バックオフィスまで引き受けます。たとえば、問い合わせ対応・見積・追客・アポ獲得・休眠顧客へのアプローチ、電話・メール・LINEでの対応や日程調整・顧客管理、請求・入金確認・書類作成・データ入力、そして業務整理・数値管理・自動化などの改善です。どこまでを任せるかは、30分無料相談でうかがって一緒に決めます。</p>
+        </details>
+        <details>
+          <summary>月額はいくらですか？</summary>
+          <p>START 月5万円〜（問い合わせ・見積・追客など）、GROW 月10万円〜（営業事務・顧客対応）、FULL 月20万円〜（営業支援・バックオフィス・改善）の3つのプランに、成果報酬を組み合わせます。業務の内容と量をうかがったうえで、金額をご提案します。</p>
+        </details>
+        <details>
+          <summary>成果報酬とは？</summary>
+          <p>月額とは別に、成果に応じていただく報酬です。何を成果とするか、どのように金額を決めるかは、引き受ける業務に合わせてヒアリングで決めます。</p>
+        </details>
+      </div>
+      <p class="more more-center"><a class="more-link" href="/faq/" aria-label="よくある質問を詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
+    </section>
+
+    <!-- §15 最終CTA（［30分無料相談］→ 下のフォーム） -->
+    <!-- @ctaband -->
+    <section class="cta-banner" aria-labelledby="cta-banner-h">
+      <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
+      <div class="cta-banner-body">
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
+        <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
+        <p class="cta-banner-lead">REALIFEが、</p>
+        <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>
+        <p class="cta-banner-lead">を整理します。<br />そして、<wbr />売上・コスト・利益の<wbr />改善ポイントを一緒に考えます。</p>
+        <a class="btn-pill btn-lg" href="/?purpose=hearing#contact"><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send"/></svg></span></a>
+        <p class="cta-banner-tel"><a href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel"/></svg>092-600-7592</a></p>
+      </div>
+    </section>
+    <!-- /@ctaband -->
+    <!-- /@top -->
+
+    <!-- フォーム（締めの CTA「30分無料相談」の行き先） -->
+    <section class="section section-contact" id="contact">
+      <div class="head">
+        <p class="label" lang="en">Contact</p>
+        <h2>お問い合わせ</h2>
+      </div>
+      <form class="form" action="#" method="post" data-form>
+        <div class="field">
+          <span class="label-like" id="purpose-l">ご用件<span class="badge badge-req">必須</span></span>
+          <div class="purpose" role="radiogroup" aria-labelledby="purpose-l">
+            <!-- @purpose -->
+            <label><input type="radio" name="purpose" value="hearing" checked /><span>30分無料相談</span></label>
+            <label><input type="radio" name="purpose" value="other" /><span>そのほかのお問い合わせ</span></label>
+            <!-- /@purpose -->
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-name">お名前<span class="badge badge-req">必須</span></label>
+          <input id="f-name" type="text" name="name" autocomplete="name" placeholder="お名前" required />
+        </div>
+        <div class="field">
+          <label for="f-company">会社名<span class="badge badge-req">必須</span></label>
+          <input id="f-company" type="text" name="company" autocomplete="organization" placeholder="会社名" required />
+        </div>
+        <div class="field">
+          <label for="f-email">メールアドレス<span class="badge badge-req">必須</span></label>
+          <input id="f-email" type="email" name="email" autocomplete="email" placeholder="mail@company.co.jp" required />
+        </div>
+        <div class="field">
+          <label for="f-tel">電話番号<span class="badge">任意</span></label>
+          <input id="f-tel" type="tel" name="tel" autocomplete="tel" placeholder="000-0000-0000" />
+        </div>
+        <div class="field">
+          <label for="f-industry">業種<span class="badge">任意</span></label>
+          <div class="select">
+            <select id="f-industry" name="industry">
+              <option value="">選択してください</option>
+              <option>建設・リフォーム</option>
+              <option>不動産</option>
+              <option>士業</option>
+              <option>医療・美容</option>
+              <option>その他</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-message">お問い合わせ内容<span class="badge badge-req" data-msg-badge>必須</span></label>
+          <textarea id="f-message" name="message" rows="6" placeholder="ご自由にご入力ください" required data-msg></textarea>
+        </div>
+        <p class="privacy-link"><a href="/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        <label class="check"><input type="checkbox" name="agree" required /><span>プライバシーポリシーに同意する</span></label>
+        <div class="form-submit">
+          <button type="submit" class="btn-pill btn-pill-submit">
+            <span>送信する</span>
+            <span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send"/></svg></span>
+          </button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+    </section>
+
+    <!-- ブログ（原文に無い欄のため、原文の並びの後ろに置く。content.py が @latest を生成） -->
+    <section class="section surface surface-gray" id="blog">
+      <div class="head">
+        <p class="label" lang="en">Blog</p>
+        <h2>ブログ</h2>
+      </div>
+      <ul class="post-list">
+        <!-- @latest -->
+        <li><a href="/blog/what-is-bpo/"><span class="post-meta"><time datetime="2026-10-06">2026/10/06</time><span class="post-cat">BPO活用</span></span><span class="post-title">BPOとは？ 派遣・外注との違いと<span class="nw">「攻めのBPO」</span><span class="nw">という考え方</span></span></a></li>
+        <li><a href="/blog/lost-inquiries/"><span class="post-meta"><time datetime="2026-10-06">2026/10/06</time><span class="post-cat">BPO活用</span></span><span class="post-title">問い合わせの「取りこぼし」とは？ <span class="nw">中小企業</span>で起きやすい4つの場面</span></a></li>
+        <li><a href="/blog/ai-and-people/"><span class="post-meta"><time datetime="2026-10-06">2026/10/06</time><span class="post-cat">AI・DX</span></span><span class="post-title">AIと人の役割分担 ― AIを覚えなくても、<span class="nw">AIの成果</span>は受け取れる</span></a></li>
+        <!-- /@latest -->
+      </ul>
+      <p class="more more-center"><a class="more-link" href="/blog/" aria-label="ブログを詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
+    </section>
+  </main>
+</BaseLayout>

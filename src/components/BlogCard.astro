@@ -1,0 +1,13 @@
+---
+import type { Post } from "../data/posts";
+export interface Props { post: Post; heading?: "h2" | "h3" }
+const { post, heading = "h2" } = Astro.props;
+const Tag = heading;
+---
+<li class="blog-card" data-cat={post.cat}>
+  <a href={`/blog/${post.slug}/`}>
+    <img src={post.image} alt="" width="1344" height="756" loading="lazy" />
+    <p class="blog-meta"><span class="blog-cat">{post.cat}</span><time datetime={post.date}>{post.dateLabel}</time></p>
+    <Tag class="blog-title" set:html={post.h1} />
+  </a>
+</li>

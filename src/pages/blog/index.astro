@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CtaBanner from "../../components/CtaBanner.astro";
+import BlogCard from "../../components/BlogCard.astro";
+import { POSTS } from "../../data/posts";
+---
+<BaseLayout
+  title="ブログ｜REALIFE BPO"
+  description="REALIFE BPOのブログ。BPOの活用、AI・DX、業種ごとの仕事の進め方をお伝えします。"
+  canonicalPath="/blog/"
+  currentPage="blog"
+>
+  <main id="main">
+    <section class="page-head">
+      <p class="label" lang="en">Blog</p>
+      <h1>ブログ</h1>
+      <p class="page-lead">BPOの活用、AI・DX、業種ごとの仕事の進め方などを、わかりやすくお伝えします。</p>
+    </section>
+
+    <section class="list-wrap list-wrap-wide" data-blog>
+      <div class="cat-tabs" role="group" aria-label="カテゴリで絞り込む"><button type="button" class="cat-tab" aria-pressed="true" data-cat="">すべて</button><button type="button" class="cat-tab" aria-pressed="false" data-cat="BPO活用">BPO活用</button><button type="button" class="cat-tab" aria-pressed="false" data-cat="AI・DX">AI・DX</button><button type="button" class="cat-tab" aria-pressed="false" data-cat="業種別">業種別</button></div>
+      <ul class="blog-grid">
+        {POSTS.map((post) => <BlogCard post={post} />)}
+      </ul>
+      <p class="empty" data-empty hidden>記事は準備中です。</p>
+      <p class="empty" data-empty-cat hidden>このカテゴリの記事は準備中です。</p>
+    </section>
+
+    <CtaBanner />
+  </main>
+</BaseLayout>

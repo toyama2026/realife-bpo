@@ -1,0 +1,43 @@
+---
+export interface Props {
+  currentPage: "top" | "about" | "service" | "price" | "flow" | "faq" | "blog" | "other";
+}
+const { currentPage } = Astro.props;
+---
+<header class="site-header" id="top">
+    <div class="header-inner">
+      <div class="header-left">
+        <a class="logo" href="/" aria-label="REALIFE BPO トップへ">
+          <img class="logo-img" src="/img/logo-realife-bpo.svg" alt="REALIFE BPO SERVICE" width="1151" height="244" />
+        </a>
+        <nav class="nav-desktop" aria-label="メインナビゲーション">
+          <a href="/service/" aria-current={currentPage === "service" ? "page" : undefined}>サービス</a>
+          <a href="/price/" aria-current={currentPage === "price" ? "page" : undefined}>料金</a>
+          <a href="/flow/" aria-current={currentPage === "flow" ? "page" : undefined}>導入の流れ</a>
+          <a href="/faq/" aria-current={currentPage === "faq" ? "page" : undefined}>よくある質問</a>
+          <a href="/blog/" aria-current={currentPage === "blog" ? "page" : undefined}>ブログ</a>
+        </nav>
+      </div>
+      <div class="hd-actions">
+        <a class="hd-tel" href="tel:0926007592"><svg aria-hidden="true"><use href="#i-tel" /></svg><span>092-600-7592</span></a>
+        <!-- 資料請求: flags.SHOW_DOC -->
+        <a class="btn-pill btn-pill-header" href="/?purpose=hearing#contact"><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send" /></svg></span></a>
+      </div>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-mobile" aria-label="メニューを開く">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="モバイルナビゲーション" hidden>
+      <a href="/service/" aria-current={currentPage === "service" ? "page" : undefined}>サービス</a>
+      <a href="/price/" aria-current={currentPage === "price" ? "page" : undefined}>料金</a>
+      <a href="/flow/" aria-current={currentPage === "flow" ? "page" : undefined}>導入の流れ</a>
+      <a href="/faq/" aria-current={currentPage === "faq" ? "page" : undefined}>よくある質問</a>
+      <a href="/blog/" aria-current={currentPage === "blog" ? "page" : undefined}>ブログ</a>
+      <div class="nav-mobile-sub">
+        <a href="/about/" aria-current={currentPage === "about" ? "page" : undefined}>REALIFEとは</a>
+        <a href="/about/#company">会社概要</a>
+        <a href="/#contact">お問い合わせ</a>
+      </div>
+      <a class="btn-pill " href="/?purpose=hearing#contact"><span>30分無料相談</span><span class="btn-pill-icon" aria-hidden="true"><svg><use href="#i-send" /></svg></span></a>
+    </nav>
+  </header>
