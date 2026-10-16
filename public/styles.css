@@ -1567,3 +1567,16 @@ main > .section.surface + .cta-banner { margin-top: 0; }
 .list-wrap:not(.list-wrap-wide) { width: var(--frame); box-sizing: border-box; padding-left: calc(var(--colL) + var(--colG)); }
 .empty { text-align: left; padding: 48px 0; }
 @media (max-width: 767px) { .list-wrap:not(.list-wrap-wide) { padding-left: 0; } .empty { padding: 40px 0; } }
+
+/* Before / After の図解化（HTML は変えず CSS だけで、ステップをカードにする） */
+.ba-col { border: 1px solid var(--line); background: #fff; }
+.ba-col.is-after { background: var(--gray-50); border-color: var(--brand); border-top-width: 3px; }
+.ba-col .ba-tag { display: inline-block; padding: 4px 14px; border-radius: 999px; background: var(--gray-50); }
+.ba-col.is-after .ba-tag { background: var(--brand); color: #fff; }
+.ba-flow { display: flex; flex-direction: column; align-items: center; }
+.ba-flow p:not(.ba-arrow) { width: 100%; max-width: 280px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; box-sizing: border-box; }
+.ba-flow p.ba-last { background: var(--text); border-color: var(--text); color: #fff; }
+.is-after .ba-flow p:not(.ba-arrow) { border-color: var(--brand); }
+.is-after .ba-flow p.ba-last { background: var(--brand); border-color: var(--brand); color: #fff; }
+.ba-flow .ba-arrow { margin: 4px 0; }
+.is-after .ba-flow .ba-arrow { color: var(--brand); }
