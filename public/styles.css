@@ -1580,3 +1580,20 @@ main > .section.surface + .cta-banner { margin-top: 0; }
 .is-after .ba-flow p.ba-last { background: var(--brand); border-color: var(--brand); color: #fff; }
 .ba-flow .ba-arrow { margin: 4px 0; }
 .is-after .ba-flow .ba-arrow { color: var(--brand); }
+
+/* サービスの対象業務・料金の注記・考え方（資料に沿って追加） */
+.area-tasks { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.area-tasks li { position: relative; padding-left: 16px; font-size: 15px; line-height: 1.7; color: var(--text-2); }
+.area-tasks li::before { content: ""; position: absolute; left: 0; top: 0.8em; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+.areas-note { margin-top: 28px; font-size: 14px; color: var(--muted); line-height: 1.8; }
+.policy-note { margin-top: 32px; display: grid; gap: 12px; }
+.policy-note p { font-size: 15px; line-height: 1.9; color: var(--text-2); word-break: auto-phrase; }
+.principles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 12px; counter-reset: pr; }
+.principles li { counter-increment: pr; padding: 20px 20px 20px 56px; border: 1px solid var(--line); border-radius: 10px; position: relative; display: grid; gap: 6px; }
+.principles li::before { content: counter(pr, decimal-leading-zero); position: absolute; left: 18px; top: 20px; font-family: var(--font-en); font-weight: 600; color: var(--brand); }
+.principles strong { font-size: 17px; }
+.principles span { font-size: 15px; line-height: 1.8; color: var(--text-2); }
+.principles-sub { margin: 40px 0 14px; font-size: 18px; font-weight: 700; }
+.policy-tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.policy-tags li { padding: 6px 14px; border-radius: 999px; background: var(--gray-50); border: 1px solid var(--line); font-size: 14px; }
+@media (max-width: 767px) { .principles { grid-template-columns: 1fr; } }
