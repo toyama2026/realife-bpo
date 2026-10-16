@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
+---
+<BaseLayout
+  title="お知らせ｜REALIFE BPO"
+  description="REALIFE BPOからのお知らせ。"
+  canonicalPath="/news/"
+  currentPage="other"
+>
+  <main id="main">
+    <section class="page-head">
+      <p class="label" lang="en">News</p>
+      <h1>お知らせ</h1>
+      <p class="page-lead">REALIFE BPOからのお知らせです。</p>
+    </section>
+
+    <section class="list-wrap">
+      <p class="empty">現在、お知らせはありません。</p>
+    </section>
+
+    <CtaBanner />
+  </main>
+</BaseLayout>
