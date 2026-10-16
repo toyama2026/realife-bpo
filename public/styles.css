@@ -179,10 +179,10 @@ svg { width: 1em; height: 1em; }
   margin-bottom: 14px;
 }
 .fv-catch {
-  font-size: clamp(28px, 2.8vw, 40px);
+  font-size: clamp(34px, 3.6vw, 52px);
   font-weight: 700;
-  line-height: 1.45;
-  letter-spacing: 0.04em;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 /* ---------- 共通セクション ---------- */
@@ -833,7 +833,7 @@ h1, h2, h3, .fv-catch, .telband-lead, .p-t, .issue-close, .diff-close, .aix-clos
   /* M1: 固定バーはフォーム・締めの CTA・フッターで隠れるので、body の下余白は要らない */
   .hd-actions { display: none; }
   .nav-toggle { margin-left: auto; } /* M1: SP ヘッダーの電話アイコンは廃止（電話は固定バーとフッターに） */
-  .fv-catch { font-size: 27px; }
+  .fv-catch { font-size: 32px; line-height: 1.4; }
   .fv-value { margin-top: 20px; }
   .fv-value-copy h2 { font-size: 19px; }
   .fv-value-cta { width: 100%; flex-direction: column; align-items: stretch; }
@@ -1378,10 +1378,10 @@ main { overflow-x: clip; }
 
 /* 見出し */
 .head { text-align: left; margin: 0; padding: 0; }
-.head h2 { font-size: 38px; line-height: 1.45; letter-spacing: 0.02em; font-weight: 700; color: var(--ink); text-align: left; word-break: auto-phrase; }
+.head h2 { font-size: 42px; line-height: 1.4; letter-spacing: 0.02em; font-weight: 700; color: var(--ink); text-align: left; word-break: auto-phrase; }
 .head .label, .page-head .label, .cta-banner .label { display: flex; align-items: center; gap: 12px; font-size: 14px; letter-spacing: 0.16em; color: var(--ink); margin: 0 0 20px; font-weight: 500; }
 .head .label::before, .page-head .label::before, .cta-banner .label::before { content: ""; width: 28px; height: 1px; background: currentColor; flex: none; }
-.core-sub { font-size: 24px; margin-top: 18px; text-align: left; }
+.core-sub { font-size: 26px; margin-top: 18px; text-align: left; line-height: 1.6; }
 
 /* ページ見出し（下層）：左寄せ・大きく */
 .page-head { width: var(--frame); margin: 0 auto; padding: 104px 0 0; text-align: left; }
@@ -1473,10 +1473,8 @@ main > .section.section-contact { padding-top: var(--gap-section); }
 /* Problem：業務のタグを写真カードに（トップ） */
 #problem > .head { grid-row: 1; }
 #problem > .head + .lead-line { grid-row: 1; align-self: end; margin-bottom: 0; }
-#problem > .task-cards { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px; width: 100%; margin-top: 56px; }
-.task-cards li { border: 0; padding: 0; background: none; font-size: 16px; font-weight: 700; line-height: 1.5; }
-.task-cards img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; display: block; margin-bottom: 12px; }
-#problem > .task-cards + .lead-line { margin-top: 40px; }
+#problem > .task-tags { grid-column: 1 / -1; margin-top: 56px; }
+#problem > .task-tags + .lead-line { margin-top: 40px; }
 
 /* 面 */
 main > .section.surface { margin-top: var(--gap-section); padding: var(--gap-in) 0; background: var(--surface); box-shadow: 0 0 0 100vmax var(--surface); clip-path: inset(0 -100vmax); }
@@ -1508,7 +1506,6 @@ main > .section.surface + .cta-banner { margin-top: 0; }
   :root { --colL: 300px; --colG: 40px; --gap-section: 112px; --gap-in: 96px; }
   .head h2 { font-size: 30px; }
   .page-head h1 { font-size: 38px; }
-  #problem > .task-cards { grid-template-columns: repeat(4, 1fr); }
   .cta-banner { gap: 40px; }
   .cta-banner h2 { font-size: 28px; }
 }
@@ -1518,12 +1515,12 @@ main > .section.surface + .cta-banner { margin-top: 0; }
   main > .section { display: block; }
   main > .section > .head { margin-bottom: 32px; }
   main > .section > .head + :is(.num-steps, .svc4, .feature-duo, .ba, .why), main > .section > .head-lead + .num-steps { margin-top: 36px; }
-  .head h2 { font-size: 28px; line-height: 1.5; }
+  .head h2 { font-size: 30px; line-height: 1.45; }
   .head .label, .page-head .label, .cta-banner .label { font-size: 13px; margin-bottom: 14px; }
   .page-head { padding-top: 64px; }
   .page-head h1 { font-size: 30px; }
   .page-head .page-lead { font-size: 16px; }
-  .core-sub { font-size: 19px; }
+  .core-sub { font-size: 20px; }
   main > .section > .head-lead { font-size: 18px; text-align: left; }
   .problem-line { font-size: 19px; }
   .big-quote p { font-size: 20px; }
@@ -1551,8 +1548,6 @@ main > .section.surface + .cta-banner { margin-top: 0; }
   .price-panel { display: block; }
   .price-panel > .head { margin-bottom: 32px; }
   .plan-price strong { font-size: 48px; }
-  #problem > .task-cards { display: grid; grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 44%; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; margin-top: 32px; padding-bottom: 8px; }
-  .task-cards li { scroll-snap-align: start; font-size: 15px; }
   .cta-banner { display: block; padding: 0 0 64px; }
   .cta-banner-photo { margin: 0 calc(50% - 50vw); }
   .cta-banner-photo img { min-height: 0; height: auto; aspect-ratio: 4 / 3; }
@@ -1601,12 +1596,6 @@ main > .section.surface + .cta-banner { margin-top: 0; }
 .policy-doc h2 { margin-top: 26px; font-size: 20px; font-weight: 700; }
 .policy-doc p { font-size: 15px; line-height: 1.9; color: var(--text-2); word-break: auto-phrase; }
 .policy-doc .policy-date { margin-top: 24px; color: var(--muted); font-size: 14px; }
-
-/* スマホの「時間を取られている業務」カード: 標準のスクロールバー（矢印つき）を隠し、スナップをゆるくする */
-@media (max-width: 767px) {
-  #problem > .task-cards { scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x proximity; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
-  #problem > .task-cards::-webkit-scrollbar { display: none; }
-}
 
 /* Feature の式: 改行したとき「＋」が行頭に来るよう、各項目の前に＋を置く */
 .formula span > i:first-child { margin-left: 0; }
