@@ -80,7 +80,7 @@
       es.forEach(function (e) { if (e.isIntersecting) blockSet.add(e.target); else blockSet.delete(e.target); });
       render();
     });
-    document.querySelectorAll("#contact, .cta-banner, .site-footer").forEach(function (el) { bo.observe(el); });
+    document.querySelectorAll("#contact, .cta-banner, .contact-band, .site-footer").forEach(function (el) { bo.observe(el); });
     render();
   } else if (bar) {
     bar.classList.add("is-shown");
