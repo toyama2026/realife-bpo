@@ -833,7 +833,7 @@ h1, h2, h3, .fv-catch, .telband-lead, .p-t, .issue-close, .diff-close, .aix-clos
   /* M1: 固定バーはフォーム・締めの CTA・フッターで隠れるので、body の下余白は要らない */
   .hd-actions { display: none; }
   .nav-toggle { margin-left: auto; } /* M1: SP ヘッダーの電話アイコンは廃止（電話は固定バーとフッターに） */
-  .fv-catch { font-size: 32px; line-height: 1.4; }
+  .fv-catch { font-size: 36px; }
   .fv-value { margin-top: 20px; }
   .fv-lead { font-size: 15px; }
   .fv-value-copy h2 { font-size: 19px; }
@@ -1519,7 +1519,7 @@ main > .section.surface + .cta-banner { margin-top: 0; }
   .head h2 { font-size: 30px; line-height: 1.45; }
   .head .label, .page-head .label, .cta-banner .label { font-size: 13px; margin-bottom: 14px; }
   .page-head { padding-top: 64px; }
-  .page-head h1 { font-size: 30px; }
+  .page-head h1 { font-size: 34px; }
   .page-head .page-lead { font-size: 16px; }
   .core-sub { font-size: 20px; }
   main > .section > .head-lead { font-size: 18px; text-align: left; }

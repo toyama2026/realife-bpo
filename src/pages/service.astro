@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
 ---
 <BaseLayout
   title="サービス｜REALIFE BPO"
@@ -29,8 +30,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h2 class="svc4-en" lang="en">SALES</h2>
             <p class="area-h">売上をつくる</p>
             <p class="svc4-items"><span class="si">問い合わせ</span><span class="sl">&nbsp;/ </span><span class="si">見積</span><span class="sl">&nbsp;/ </span><span class="si">追客</span><span class="sl">&nbsp;/ </span><span class="si">アポ</span><span class="sl">&nbsp;/ </span><span class="si">休眠顧客</span></p>
-            <p class="area-label">主な対象業務</p>
-            <ul class="area-tasks"><li>見込み顧客へのアプローチ支援</li><li>営業リストの作成・管理</li><li>アポイント獲得支援</li><li>営業事務・資料作成</li><li>CRM入力・顧客情報管理</li><li>営業プロセスの改善</li></ul>
           </div>
         </article>
         <article class="area" id="customer">
@@ -39,8 +38,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h2 class="svc4-en" lang="en">CUSTOMER</h2>
             <p class="area-h">顧客を逃さない</p>
             <p class="svc4-items"><span class="si">電話</span><span class="sl">&nbsp;/ </span><span class="si">メール</span><span class="sl">&nbsp;/ </span><span class="si">LINE</span><span class="sl">&nbsp;/ </span><span class="si">日程調整</span><span class="sl">&nbsp;/ </span><span class="si">顧客管理</span></p>
-            <p class="area-label">主な対象業務</p>
-            <ul class="area-tasks"><li>問い合わせ一次対応</li><li>メール・チャット対応</li><li>予約・日程調整</li><li>顧客情報の整理</li><li>対応履歴の管理</li><li>対応フローの改善</li></ul>
           </div>
         </article>
         <article class="area" id="backoffice">
@@ -49,8 +46,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h2 class="svc4-en" lang="en">BACK OFFICE</h2>
             <p class="area-h">会社を止めない</p>
             <p class="svc4-items"><span class="si">請求</span><span class="sl">&nbsp;/ </span><span class="si">入金確認</span><span class="sl">&nbsp;/ </span><span class="si">書類</span><span class="sl">&nbsp;/ </span><span class="si">データ入力</span></p>
-            <p class="area-label">主な対象業務</p>
-            <ul class="area-tasks"><li>データ入力・整理</li><li>見積書・請求書などの書類作成補助</li><li>各種情報の管理</li><li>定型事務処理</li><li>社内業務の運用支援</li><li>業務手順の標準化</li></ul>
           </div>
         </article>
         <article class="area" id="improvement">
@@ -59,12 +54,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h2 class="svc4-en" lang="en">IMPROVEMENT</h2>
             <p class="area-h">業務を改善する</p>
             <p class="svc4-items"><span class="si">業務整理</span><span class="sl">&nbsp;/ </span><span class="si">数値管理</span><span class="sl">&nbsp;/ </span><span class="si">自動化</span><span class="sl">&nbsp;/ </span><span class="si">AI活用</span><span class="sl">&nbsp;/ </span><span class="si">DX</span></p>
-            <p class="area-label">主な対象業務</p>
-            <ul class="area-tasks"><li>業務フローの整理</li><li>定型作業の自動化</li><li>AIを活用した業務支援</li><li>システム間のデータ連携</li><li>業務マニュアルの整備</li><li>運用状況の可視化・改善</li></ul>
           </div>
         </article>
       </div>
-      <p class="areas-note">※実際の提供範囲は、契約内容・必要な権限・業務上のリスクに応じて決定します。</p>
     </section>
 
     <section class="section surface surface-gray" id="method">
@@ -73,8 +65,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <h2>人だけでやらない。</h2>
       </div>
       <p class="lead-line">REALIFEは業務に応じて、</p>
-      <p class="formula"><span>人の判断</span><span><i aria-hidden="true">＋</i>自動化</span><span><i aria-hidden="true">＋</i>既存システム</span></p>
-      <p class="lead-line">を組み合わせます。必要な場面ではAIも活用します。</p>
+      <p class="formula"><span>人<i aria-hidden="true">＋</i>AIエージェント</span><i aria-hidden="true">＋</i><span>自動化<i aria-hidden="true">＋</i>既存システム</span></p>
+      <p class="lead-line">を組み合わせます。</p>
       <blockquote class="big-quote"><p>REALIFEが、<wbr />最適な方法で業務を動かします。</p></blockquote>
 
     </section>
@@ -116,7 +108,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
         <div class="ba-pair">
           <div class="ba-col"><h3 class="ba-tag" lang="en">Before</h3><div class="ba-flow"><p>社員が請求・事務</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">営業できない</p></div></div>
-          <div class="ba-col is-after"><h3 class="ba-tag" lang="en">After</h3><div class="ba-flow"><p>REALIFEが事務</p><p class="ba-arrow" aria-hidden="true">↓</p><p>社員が営業</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">売上アップ</p></div></div>
+          <div class="ba-col is-after"><h3 class="ba-tag" lang="en">After</h3><div class="ba-flow"><p>REALIFEが事務</p><p class="ba-arrow" aria-hidden="true">↓</p><p>社員が営業</p><p class="ba-arrow" aria-hidden="true">↓</p><p class="ba-last">売上UP</p></div></div>
         </div>
       </div>
 
@@ -127,7 +119,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
       <div class="cta-banner-body">
         <p class="label" lang="en">Contact</p>
-        <h2 id="cta-banner-h">まずは、<wbr />今の業務の状況を<wbr />お聞かせください。</h2>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
         <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
         <p class="cta-banner-lead">REALIFEが、</p>
         <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>

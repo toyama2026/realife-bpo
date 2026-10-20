@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
 ---
 <BaseLayout
   title="REALIFEとは｜REALIFE BPO"
@@ -28,31 +29,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <blockquote class="big-quote big-quote-plain"><p>REALIFEがAIエージェント・自動化・システム・人を組み合わせ、<br class="pc-only" />最も効率的な方法で業務を運用する。</p></blockquote>
     </section>
 
-    <section class="section" id="philosophy">
-      <div class="head">
-        <p class="label" lang="en">Philosophy</p>
-        <h2>私たちの考え方</h2>
-      </div>
-      <ol class="principles">
-        <li><strong>業務代行を目的にしない</strong><span>何件処理したかより、その業務が何を生んだかを見ます。</span></li>
-        <li><strong>成果から逆算する</strong><span>作業ではなく、達成したい成果から業務を設計します。</span></li>
-        <li><strong>人を増やす前に仕組みを直す</strong><span>標準化・自動化を先に考えます。人の判断が要る業務は、品質を優先して人を置きます。</span></li>
-        <li><strong>AIは手段</strong><span>特定の技術を押し付けず、業務内容・費用対効果・安全性で選びます。</span></li>
-        <li><strong>改善を前提にする</strong><span>運用結果を見て、見直しを繰り返します。</span></li>
-        <li><strong>顧客と同じ方向を向く</strong><span>目先の作業量より、長い信頼関係を大切にします。</span></li>
-      </ol>
-      <h3 class="principles-sub">サービス提供の基本方針</h3>
-      <ul class="policy-tags">
-        <li>成果重視</li>
-        <li>合理性</li>
-        <li>品質</li>
-        <li>透明性（業務範囲・費用・責任分担を明確に）</li>
-        <li>柔軟性</li>
-        <li>継続改善</li>
-        <li>安全性（顧客情報の保護と権限管理）</li>
-      </ul>
-    </section>
-
     <section class="section" id="company">
       <div class="head">
         <p class="label" lang="en">Company</p>
@@ -63,7 +39,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <div><dt>設立</dt><dd>2024年1月</dd></div>
         <div><dt>所在地</dt><dd>〒812-0011 <span class="nw">福岡県福岡市博多区</span><span class="nw">博多駅前2-4-2</span> <span class="nw">H¹O博多駅前707号室</span></dd></div>
         <div><dt>事業内容</dt><dd>BPO / AIX / HOUSING</dd></div>
-        <div><dt>電話</dt><dd><a href="tel:0926007592">092-600-7592</a></dd></div>
+        <div><dt>TEL</dt><dd><a href="tel:0926007592">092-600-7592</a></dd></div>
         <div><dt>FAX</dt><dd>092-600-7594</dd></div>
       </dl>
     </section>
@@ -73,7 +49,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
       <div class="cta-banner-body">
         <p class="label" lang="en">Contact</p>
-        <h2 id="cta-banner-h">まずは、<wbr />今の業務の状況を<wbr />お聞かせください。</h2>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
         <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
         <p class="cta-banner-lead">REALIFEが、</p>
         <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>

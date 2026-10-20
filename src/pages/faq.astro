@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
 ---
 <BaseLayout
   title="よくある質問｜REALIFE BPO"
@@ -24,19 +25,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="faq">
         <details>
           <summary>どんな業務を任せられますか？</summary>
-          <p>営業・顧客対応・事務・バックオフィスまで引き受けます。たとえば、問い合わせ対応・見積・追客・アポイント獲得・休眠顧客へのアプローチ、電話・メール・LINEでの対応や日程調整・顧客管理、請求・入金確認・書類作成・データ入力、そして業務整理・数値管理・自動化などの改善です。どこまでを任せるかは、30分無料相談でうかがって一緒に決めます。</p>
+          <p>営業・顧客対応・事務・バックオフィスまで引き受けます。たとえば、問い合わせ対応・見積・追客・アポ獲得・休眠顧客へのアプローチ、電話・メール・LINEでの対応や日程調整・顧客管理、請求・入金確認・書類作成・データ入力、そして業務整理・数値管理・自動化などの改善です。どこまでを任せるかは、30分無料相談でうかがって一緒に決めます。</p>
         </details>
         <details>
           <summary>月額はいくらですか？</summary>
-          <p>START 月5万円〜（問い合わせ・見積・追客など）、GROW 月10万円〜（営業事務・顧客対応）、FULL 月20万円〜（営業支援・バックオフィス・改善）の3つのプランに、成果報酬を組み合わせます。業務の内容と量をうかがったうえで、金額をご提案します。表示の金額は、すべて税別です。</p>
+          <p>START 月5万円〜（問い合わせ・見積・追客など）、GROW 月10万円〜（営業事務・顧客対応）、FULL 月20万円〜（営業支援・バックオフィス・改善）の3つのプランに、成果報酬を組み合わせます。業務の内容と量をうかがったうえで、金額をご提案します。</p>
         </details>
         <details>
           <summary>成果報酬とは？</summary>
-          <p>月額とは別に、成果に応じてお支払いいただく報酬です。対象とする指標、算定方法、計測期間、責任の範囲は、引き受ける業務に合わせてヒアリングで決め、契約の前に合意します。成果の保証ではありません。</p>
+          <p>月額とは別に、成果に応じていただく報酬です。何を成果とするか、どのように金額を決めるかは、引き受ける業務に合わせてヒアリングで決めます。</p>
         </details>
         <details>
           <summary>AIだけで対応しますか？</summary>
-          <p>いいえ。定型業務や大量の処理は、AIや自動化で効率化します。判断・顧客対応・改善など、人にしかできない仕事は人が担当します。</p>
+          <p>いいえ。AIエージェントや自動化などのテクノロジーを積極的に活用していますが、テクノロジーで効率化するのは定型業務や大量処理です。判断・顧客対応・改善など、人にしかできない仕事は人が担当します。人・AIエージェント・自動化・既存システムを組み合わせて、業務を動かします。</p>
         </details>
         <details>
           <summary>人は対応しますか？</summary>
@@ -44,11 +45,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </details>
         <details>
           <summary>今のシステムを使えますか？</summary>
-          <p>はい。今お使いのシステムを生かして業務を進めます。どこまで対応できるかは、30分無料相談で業務と一緒に確認します。</p>
+          <p>既存システムも組み合わせて業務を動かす考え方です。今お使いのシステムでどこまで対応できるかは、ヒアリングで業務と一緒に確認します。</p>
         </details>
         <details>
           <summary>採用との違いは？</summary>
-          <p>採用や教育、退職時の欠員補充が要りません。必要な業務を必要な分だけ月額で任せられ、AI・自動化も組み合わせて運用します。成果が出れば、対応範囲を広げていくこともできます。</p>
+          <p>採用や教育、退職による欠員への対応が要りません。必要な業務を必要な分だけ月額で任せられ、AI・自動化も組み合わせて運用します。成果が出れば、対応範囲を広げていくこともできます。</p>
         </details>
         <details>
           <summary>小規模企業でも利用できますか？</summary>
@@ -56,27 +57,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </details>
         <details>
           <summary>途中で業務を増やせますか？</summary>
-          <p>はい。成果を見ながら、対応範囲を広げていけます。プランの変更も含めて、ご相談ください。</p>
+          <p>はい。成果が出れば対応範囲を拡大していく進め方です。プランの変更も含めて、ご相談ください。</p>
         </details>
         <details>
           <summary>開始までどのくらいかかりますか？</summary>
-          <p>業務の内容と範囲によって変わります。30分無料相談のあと、業務・数字の確認とREALIFEの担当範囲の設計を行ってから運用を始めます。開始までの目安は、ヒアリングでお伝えします。</p>
-        </details>
-        <details>
-          <summary>契約期間の縛りはありますか？</summary>
-          <p>最低契約期間はありません。月ごとの更新です。</p>
-        </details>
-        <details>
-          <summary>金額は税込ですか？</summary>
-          <p>表示の金額は、すべて税別です。</p>
-        </details>
-        <details>
-          <summary>業種は限られますか？</summary>
-          <p>業種を限定していません。業務の内容と量をうかがって、ご提案します。</p>
-        </details>
-        <details>
-          <summary>個人情報の取り扱いは？</summary>
-          <p>お預かりする情報の扱いは、<a href="/privacy-policy/">プライバシーポリシー</a>に定めています。</p>
+          <p>業務の内容と範囲によって変わります。30分ヒアリングのあと、業務・数字の確認とREALIFEの担当範囲の設計を行ってから運用を始めます。開始までの目安は、ヒアリングでお伝えします。</p>
         </details>
       </div>
     </section>
@@ -86,7 +71,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
       <div class="cta-banner-body">
         <p class="label" lang="en">Contact</p>
-        <h2 id="cta-banner-h">まずは、<wbr />今の業務の状況を<wbr />お聞かせください。</h2>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
         <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
         <p class="cta-banner-lead">REALIFEが、</p>
         <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>

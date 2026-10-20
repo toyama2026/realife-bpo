@@ -15,7 +15,7 @@ for (const p of PAGES) {
   const html = read(src);
   const { title, desc } = pageMeta(html);
   let main = mainInner(html).replace(
-    /<!--[\\s]*@ctaband[\s\S]*?<!--[\\s]*\/@ctaband[\s]*-->/,
+    /<!--[\\s]*@ctaband[\\s\\S]*?<!--[\\s]*\\/@ctaband[\\s]*-->/,
     "<CtaBanner />"
   );
   out(p.file, `---

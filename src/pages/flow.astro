@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBanner from "../components/CtaBanner.astro";
 ---
 <BaseLayout
   title="導入の流れ｜REALIFE BPO"
-  description="01 30分無料相談／02 業務・数字を確認／03 REALIFEの担当範囲を設計／04 運用開始／05 成果指標（KPI）の確認／06 改善。REALIFE BPOの導入の流れです。"
+  description="01 30分ヒアリング／02 業務・数字を確認／03 REALIFEの担当範囲を設計／04 運用開始／05 KPI確認／06 改善。REALIFE BPOの導入の流れです。"
   canonicalPath="/flow/"
   ogImage="/img/page-flow.jpg"
   currentPage="flow"
@@ -22,11 +23,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     <section class="section section-tight" id="steps">
       <ol class="num-steps num-steps-6 flow-steps">
-        <li><span class="num" lang="en">01</span><h2>30分無料相談</h2></li>
+        <li><span class="num" lang="en">01</span><h2>30分ヒアリング</h2></li>
         <li><span class="num" lang="en">02</span><h2>業務・数字を確認</h2></li>
         <li><span class="num" lang="en">03</span><h2>REALIFEの<wbr />担当範囲を設計</h2></li>
         <li><span class="num" lang="en">04</span><h2>運用開始</h2></li>
-        <li><span class="num" lang="en">05</span><h2>成果指標（KPI）の確認</h2></li>
+        <li><span class="num" lang="en">05</span><h2>KPI確認</h2></li>
         <li><span class="num" lang="en">06</span><h2>改善</h2></li>
       </ol>
     </section>
@@ -39,11 +40,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="faq">
         <details>
           <summary>開始までどのくらいかかりますか？</summary>
-          <p>業務の内容と範囲によって変わります。30分無料相談のあと、業務・数字の確認とREALIFEの担当範囲の設計を行ってから運用を始めます。開始までの目安は、ヒアリングでお伝えします。</p>
+          <p>業務の内容と範囲によって変わります。30分ヒアリングのあと、業務・数字の確認とREALIFEの担当範囲の設計を行ってから運用を始めます。開始までの目安は、ヒアリングでお伝えします。</p>
         </details>
         <details>
           <summary>途中で業務を増やせますか？</summary>
-          <p>はい。成果を見ながら、対応範囲を広げていけます。プランの変更も含めて、ご相談ください。</p>
+          <p>はい。成果が出れば対応範囲を拡大していく進め方です。プランの変更も含めて、ご相談ください。</p>
         </details>
       </div>
       <p class="more more-center"><a class="more-link" href="/faq/" aria-label="よくある質問を詳しく見る">詳しく見る<span class="round-icon" aria-hidden="true"><svg><use href="#i-right"/></svg></span></a></p>
@@ -54,7 +55,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="cta-banner-photo"><img src="/img/cta-big.jpg" alt="" width="1400" height="1100" loading="lazy" /></div>
       <div class="cta-banner-body">
         <p class="label" lang="en">Contact</p>
-        <h2 id="cta-banner-h">まずは、<wbr />今の業務の状況を<wbr />お聞かせください。</h2>
+        <h2 id="cta-banner-h">まずは、<wbr />今の業務と数字を<wbr />見せてください。</h2>
         <!-- 文言は Koki 原文 §15 のまま（RENOVATION-PLAN-ORIGINAL.md）。4 つの仕事は原文の行どおり箇条で -->
         <p class="cta-banner-lead">REALIFEが、</p>
         <ul class="cta-jobs"><li>外に出せる仕事</li><li>社内に残す仕事</li><li>効率化できる仕事</li><li>売上につながる仕事</li></ul>
